@@ -41,6 +41,15 @@ public class VectorHelper {
         }
     }
   
-    
-    
+    //la somme des deux vecteur
+    public int[] sommeVecteur(int[] tab,int taille) throws DiffrenteTailleException{
+        int[] resultatTab = null;
+        if(taille != this.taille) throw new DiffrenteTailleException();
+        else{
+            for (int i = 0; i < taille; i++) {
+                resultatTab[i]=this.tabElement[i]+tab[i];
+            }
+        }
+        return resultatTab;     
+    }
 }
