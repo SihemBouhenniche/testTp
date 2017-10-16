@@ -18,7 +18,7 @@ public class VectorHelper {
     //le constructeur par deafut
 
     /**
-     *
+     * constructeur vide
      */
     public VectorHelper() {
     }
@@ -26,7 +26,7 @@ public class VectorHelper {
     //le constructeur avec paramétres
 
     /**
-     *
+     * 
      * @param taille
      * @param tabElement
      */
@@ -38,7 +38,7 @@ public class VectorHelper {
    //algorithme de tri 
 
     /**
-     *
+     * algorithme de tri par transposition
      */
     public void triTransposition(){
         int permute=0;
@@ -58,7 +58,7 @@ public class VectorHelper {
     //la somme des deux vecteur
 
     /**
-     *
+     * la somme de deux vectuers
      * @param tab
      * @param taille
      * @return
