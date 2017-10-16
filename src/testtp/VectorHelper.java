@@ -28,15 +28,17 @@ public class VectorHelper {
    //algorithme de tri 
     public void triTransposition(){
         int permute=0;
-        for (int i = 0; i < this.taille; i++) {
-            for (int j = 0; j < this.taille-i; j++) {
-                if(this.tabElement[j]>this.tabElement[j+1]){
-                    permute = this.tabElement[j];
-                    this.tabElement[j]=this.tabElement[j+1];
-                    this.tabElement[j+1]=permute;
+        if(this.tabElement != null){
+            for (int i = 0; i < this.taille; i++) {
+                for (int j = 0; j < this.taille-i; j++) {
+                    if(this.tabElement[j]>this.tabElement[j+1]){
+                        permute = this.tabElement[j];
+                        this.tabElement[j]=this.tabElement[j+1];
+                        this.tabElement[j+1]=permute;
+                    }
                 }
-            }
-        }  
+            } 
+        }
     }
   
     
