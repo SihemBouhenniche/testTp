@@ -16,16 +16,30 @@ public class VectorHelper {
     private int[] tabElement;
 
     //le constructeur par deafut
+
+    /**
+     *
+     */
     public VectorHelper() {
     }
     
     //le constructeur avec paramétres
+
+    /**
+     *
+     * @param taille
+     * @param tabElement
+     */
     public VectorHelper(int taille, int[] tabElement) {
         this.taille = taille;
         this.tabElement = tabElement;
     }
 
    //algorithme de tri 
+
+    /**
+     *
+     */
     public void triTransposition(){
         int permute=0;
         if(this.tabElement != null){
@@ -42,6 +56,14 @@ public class VectorHelper {
     }
   
     //la somme des deux vecteur
+
+    /**
+     *
+     * @param tab
+     * @param taille
+     * @return
+     * @throws DiffrenteTailleException
+     */
     public int[] sommeVecteur(int[] tab,int taille) throws DiffrenteTailleException{
         int[] resultatTab = null;
         if(taille != this.taille) throw new DiffrenteTailleException();
