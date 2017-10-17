@@ -13,7 +13,7 @@ public class VectorHelper {
     //attribut 1 : taille du tableau
     private int taille;
     //attrinut 2 : les elements du tableau
-    private int[] tabElement;
+    private int[] tabElement=new int[100];
 
     //le constructeur par deafut
 
@@ -43,8 +43,8 @@ public class VectorHelper {
     public void triTransposition(){
         int permute=0;
         if(this.tabElement != null){
-            for (int i = 0; i < this.taille; i++) {
-                for (int j = 0; j < this.taille-i; j++) {
+            for (int i = 0; i < this.taille-1; i++) {
+                for (int j = 0; j < this.taille-i-1; j++) {
                     if(this.tabElement[j]>this.tabElement[j+1]){
                         permute = this.tabElement[j];
                         this.tabElement[j]=this.tabElement[j+1];
@@ -65,7 +65,7 @@ public class VectorHelper {
      * @throws DiffrenteTailleException
      */
     public int[] sommeVecteur(int[] tab,int taille) throws DiffrenteTailleException{
-        int[] resultatTab = null;
+        int[] resultatTab = new int[taille];
         if(taille != this.taille) throw new DiffrenteTailleException();
         else{
             for (int i = 0; i < taille; i++) {
@@ -74,4 +74,5 @@ public class VectorHelper {
         }
         return resultatTab;     
     }
+    
 }
