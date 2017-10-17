@@ -14,6 +14,10 @@ public class VectorHelper {
     private int taille;
     //attrinut 2 : les elements du tableau
     private int[] tabElement=new int[100];
+    //
+    private int max;
+    //
+    private int min;
 
     //le constructeur par deafut
 
@@ -75,4 +79,14 @@ public class VectorHelper {
         return resultatTab;     
     }
     
+    public void maxETmin(){
+        this.max=tabElement[0];
+        this.min=tabElement[0];
+        for (int i = 0; i < taille; i++) {
+            if(this.max < tabElement[i])
+                this.max = tabElement[i];
+            if(this.min > tabElement[i])
+                this.min = tabElement[i];
+        }
+    }
 }
