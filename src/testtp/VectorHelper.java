@@ -131,8 +131,8 @@ public class VectorHelper {
      *la méthode qui utilise une formule (la moyenne)
      * @return
      */
-    public double moyenne() {
-        double result =0;
+    public int moyenne() {
+        int result =0;
         for (int i = 0; i < this.taille; i++) {
             result+=this.tabElement[i];
         }
