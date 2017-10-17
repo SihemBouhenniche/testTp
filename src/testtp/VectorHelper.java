@@ -11,7 +11,7 @@ package testtp;
  */
 public class VectorHelper {
     //attribut 1 : taille du tableau
-    private int taille;
+    private int taille = 0;
     //attrinut 2 : les elements du tableau
     private int[] tabElement=new int[100];
     //
@@ -56,6 +56,8 @@ public class VectorHelper {
                     }
                 }
             } 
+        }else{
+            System.out.println("Vecteur vide");
         }
     }
   
