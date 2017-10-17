@@ -79,6 +79,9 @@ public class VectorHelper {
         return resultatTab;     
     }
     
+    /**
+     * la methode qui calcule simultanemant le max et le min 
+     */
     public void maxETmin(){
         this.max=tabElement[0];
         this.min=tabElement[0];
