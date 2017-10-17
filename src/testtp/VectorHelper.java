@@ -39,6 +39,38 @@ public class VectorHelper {
         this.tabElement = tabElement;
     }
 
+    /**
+     *récuperer la taille du tableau
+     * @return
+     */
+    public int getTaille() {
+        return taille;
+    }
+
+    /**
+     *récuperer le tableau d'elements
+     * @return
+     */
+    public int[] getTabElement() {
+        return tabElement;
+    }
+
+    /**
+     * recuperer le max 
+     * @return
+     */
+    public int getMax() {
+        return max;
+    }
+
+    /**
+     *recuperer le min
+     * @return
+     */
+    public int getMin() {
+        return min;
+    }
+
    //algorithme de tri 
 
     /**
